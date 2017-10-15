@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mywebsite</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <style type="text/css">
+    	body{font-family:lixuke;}
+    	header{background: url(images/bg_all.jpg) center center no-repeat;text-align: center;background-size:cover;}
+    	header h1{line-height:300px;margin:0;font-size:80px;color:#FFFFFF;}
+    	header .text{color:#fff;font-size:30px;}
+    	.navbar-brand{padding: 0;padding-left:10px;padding-top:5px;}
+    	.logo{width:40px;height:40px;vertical-align:middle;}
+    	.my_story{font-size:18px;}
+    	.h_inner{background-color:rgba(0,0,0,.5);}
+    	.picture{display:inline-block;}
+    	
+    	.l_item.active{background:url(images/nav_bg_1.png) no-repeat 10px;}
+    	nav{position: fixed !important;width:100%;z-index: 10;}
+    	.navbar{margin-bottom: 0;}
+    	.navbar-default .navbar-nav>.active>a{background-color:transparent;}
+    	.navbar-default .navbar-nav>.active>a:hover{background-color:transparent;}
+    	.nav>li>a:focus, .nav>li>a:hover{background-color:transparent;}
+    	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{background-color:transparent;}
+    	.box .container{padding:20px;}
+    	.box .container .item img{width:100%;}
+    	.picture img{width:100%;}
+    	.picture{position: relative;overflow: hidden;}
+    	.picture i{position: absolute;top:0;left:-300px;display:inline-block;width:30px;height:700px;background-image: linear-gradient(0deg,rgba(255,255,255,0),rgba(255,255,255,1),rgba(255,255,255,0));transform: skewX(-45deg);}
+    	.picture:hover i{left:800px;transition:2s;}
+    	@font-face {
+    		font-family:lixuke;
+    		src: url(fonts/Li-Xuke.ttf);
+    	}
+    	.worklist h2{text-align: center;}
+    	.worklist a{display:inline-block;width:70%;height:70%;}
+    	.worklist .skip{height:30px;line-height:30px;color:#ed5844;}
+    	.worklist a img{width:100%;height:100%;}
+    	#fancybox-inner{width:100%;height:100%;}
+    	#fancybox-wrap{box-sizing: content-box !important;}
+    	
+    	.my_info{line-height:80px;height:80px;}
+    	
+    	.person_info{display:flex;justify-content: center;align-items: center;margin-bottom:35px;}
+    	.person_info .pic{margin-right:15px;}
+    	.person_info .content{min-width:215.74px;}
+    	.person_info h6{font-size:16px;margin:0;line-height:24px;}
+    	.person_info p{margin:0;line-height:24px;}
+    	.mrt{margin-top:40px;}
+    	.mrb{margin-bottom:40px;}
+    	.pdt50{padding-top:50px;}
+    	.skip{color:#666;font-size:24px;}
+    	.textright{text-align: right;}
+    	.bg_gray{background-color: #eee;}
+    	.bg_footer{background-color:#9C9C9C;}
+    	.weixinma{width:10%;}
+    	.content a{color:#fff;}
+    	
+    	.callme{font-size:30px;}
+    	.totop{height:50px;width:50px;border-radius:50%;position:fixed;right:30px;bottom:30px;background-color:#fff;color:red;text-align:center;line-height:50px;font-size:20px;cursor: pointer;}
+    	@media only screen and (max-width:992px ) {
+    		.pdt50{text-align: center;}
+    	}
+    </style>
+  </head>
+  <body>
+  	
+	  	<nav class="navbar navbar-default" role="navigation">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><img src="images/logo.png"/ class="logo"></a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="l_item nav_home active"><a href="javascript:;">首页</a></li>
+			    	<li class="l_item nav_work"><a href="javascript:;">作品</a></li>
+			    	<li class="l_item nav_mine"><a href="javascript:;">我的</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+  	
+		<header>
+			<div class="h_inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<h1>hello world</h1>
+							<div class="text">
+								<p>遇见我是你最美丽的意外</p>
+								<p>我掌握HTML和css，能够为客户书写完美的静态页面…</p>
+								<p>我熟知JavaScript和Jquery，可以高效完美地实现客户想要交互效果…</p>
+								<p>我熟悉vue、angular、react等前端框架，可以根据项目需求运用相应框架…</p>
+								<p class="mrb">良好的团队精神、优秀的学习能力、对前端工作的热爱，我就是你要找的前端攻城狮…</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="mian">
+			<div class="container">
+				<div class="row worklist">
+					<div class="col-xs-12">
+						<h2 class="my_info">个人作品</h2>
+					</div>
+				</div>
+				<div class="row mrb">
+					<div class="col-md-6">
+						<a class="picture"><img src="images/Studeon.png" title="静态页面，包含基本交互"/><i></i></a>
+					</div>
+					<div class="col-md-6 pdt50">
+						<a class="skip" target="_blank" href="../Studeon/index.html">原网页展示</a>
+						<h4>html+css</h4>
+						<p>这是一套用HTML和CSS书写的静态页面，了解了网页的基本结构；</p>
+						<p>初步了解了网页的布局，以及实现各种布局的方法</p>
+						<p>熟悉了网页样式的使用，尤其是定位属性及浮动属性的使用</p>
+						<p>使用a标签的href属性实现页面之间的跳转</p>
+					</div>
+				</div>
+				<div class="row mrb bg_gray">
+					<div class="col-md-6 pdt50 textright">
+						<a class="skip" target="_blank" href="jingdong/index.html">原网页展示</a>
+						<h4>html+css+javascript+jquery</h4>
+						<p>仿写京东商城首页，实现首页基本交互效果；</p>
+						<p>仿写的过程中，了解里各种事件（onclick,onmousedown等）；</p>
+						<p>利用定时器做出轮播效果，使用屏幕滚动事件实现页面模块的跳转；</p>
+						<p>使用点击事件实现选项卡功能；掌握使用控制台来调整页面并清除bug的方法</p>
+					</div>
+					<div class="col-md-6">
+						<a class="picture"><img src="images/jd.png" title="电商网页，包含基本交互效果"/><i></i></a>
+					</div>
+				</div>
+				<div class="row mrb">
+					<div class="col-md-6">
+						<a class="picture"><img src="images/xiangyingshi.png" title="响应式网页，bootstrap框架开发"/><i></i></a>
+					</div>
+					<div class="col-md-6 pdt50">
+						<a class="skip" target="_blank" href="OAofficesistem/oawangye.html">原网页展示</a>
+						<h4>html+css+javascript+jquery+bootstrap</h4>
+						<p>响应式网页练习，熟悉响应式网页的布局方法；</p>
+						<p>响应式网页适应各种屏幕尺寸的设备，掌握媒体查询语句；</p>
+						<p>熟悉bootstrapUI框架的使用方法，掌握修改需要样式的方法；</p>
+						<p>框架缺陷，无法使网页字体跟随页面的变化而变化，不过总体而言，很便捷；</p>
+					</div>
+				</div>
+				<div class="row mrb bg_gray">
+					<div class="col-md-6 pdt50 textright">
+						<a class="skip" target="_blank" href="jingdong/JD.html">原网页展示</a>
+						<h4>html+css+javascript+jquery</h4>
+						<p>仿写京东商城详情页，实现首页基本交互效果；</p>
+						<p>熟悉各种标签的使用方法，使用类名来控制一类标签的样式；</p>
+						<p>掌握了放大镜效果的实现方法，以及各种工具的封装方法，实现代码模块化；</p>
+						<p>详情页虽然内容不多，但局部的细节却特别繁琐；</p>
+					</div>
+					<div class="col-md-6">
+						<a class="picture"><img src="images/jd2.png" title="电商网页，包含基本交互效果"/><i></i></a>
+					</div>
+				</div>
+				<div class="row mrb">
+					<div class="col-md-6">
+						<a class="picture"><img src="images/douban.png" title="vue框架app页面"/><i></i></a>
+					</div>
+					<div class="col-md-6 pdt50">
+						<a class="skip" target="_blank" href="douban/index.html">原网页展示</a>
+						<h4>html+css+javascript+jquery+vue</h4>
+						<p>仿写豆瓣App网页，基于iPhone6手机尺寸；</p>
+						<p>熟悉各种前端框架的工作原理，熟悉vue框架的使用；</p>
+						<p>掌握vue框架的路由方法以及重定向的设置；</p>
+						<p>熟悉vue.axios请求方法，并掌握获取数据的处理方法；</p>
+						<p>了解webpack打包方法；</p>
+					</div>
+				</div>
+				<div class="row bg_gray mrb">
+					<div class="col-md-6 pdt50 textright">
+						<a class="skip" target="_blank" href="game/guodahuitailang.html">原网页展示</a>
+						<h4>html+css+js</h4>
+						<p>原生js实现“锅打灰太狼”小游戏；</p>
+						<p>了解了定时器使用的一些限制，比如定时器不允许嵌套，全局一般只能有一个定时器工作；</p>
+						<p>掌握了数据绑定的方法；</p>
+						<p>掌握使用对象原型属性定义的方法避免变量的全局污染；</p>
+						<p>掌握模块化实现交互功能，最后拼合的方法；</p>
+					</div>
+					<div class="col-md-6">
+						<a class="picture"><img src="images/game.png" title="锅打灰太狼游戏，原生js技术开发"/><i></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer class="bg_footer">
+			<div class="totop">
+				<span class="glyphicon glyphicon-arrow-up"></span>
+			</div>
+			<div class="container">	
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h2 class="my_info">个人信息</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="gitHub person_info">
+							<div class="pic">
+								<a href="javascript:;"><img src="images/call_gitHub.png"></a>
+							</div>
+							<div class="content">
+								<h6>霰雪鸟的gitHub</h6>
+								<p>我的gitHub</p>
+								<a target="_blank" href="https://github.com/">https://github.com/</a>
+							</div>
+						</div>
+						<div class="weibo person_info">
+							<div class="pic">
+								<a href="javascript:;"><img src="images/call_sina.png"></a>
+							</div>
+							<div class="content">
+								<h6>霰雪鸟的微博</h6>
+								<p>我的个人微博</p>
+								<a target="_blank" href="https://weibo.com/">https://weibo.com/</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="weixin person_info">
+							<div class="pic">
+								<a href="javascript:;"><img src="images/call_weixin.png"></a>
+							</div>
+							<div class="content">
+								<h6>霰雪鸟的微信号</h6>
+								<p>我的个人微信</p>
+								<a target="_blank" href="https://wx.qq.com/">https://wx.qq.com/</a>
+							</div>
+						</div>
+						<div class="zhihu person_info">
+							<div class="pic">
+								<a href="javascript:;"><img src="images/call_zhihu.png"></a>
+							</div>
+							<div class="content">
+								<h6>霰雪鸟的知乎账号</h6>
+								<p>我的个人知乎</p>
+								<a target="_blank" href="https://www.zhihu.com/#signin">https://www.zhihu.com/#signin</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 text-center mrt">
+						<img src="images/weixinma.png" class="weixinma"/>
+						<p class="callme">联系电话：15737909015</p>
+						<p class="callme">联系邮箱：2451433542@qq.com</p>
+					</div>
+				</div>
+			</div>
+		</footer>	
+	
+	
+  </body>
+</html>
